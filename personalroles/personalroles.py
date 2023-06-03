@@ -288,7 +288,7 @@ class PersonalRoles(commands.Cog):
                 await edit_role_icon(
                     self.bot,
                     role,
-                    icon=await emoji.url(format="png").read(),
+                    icon=await emoji.read(),
                     reason=get_audit_reason(ctx.author, _("Personal Role")),
                 )
             else:
